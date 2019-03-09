@@ -1,0 +1,40 @@
+/*!
+ * Styletools Demo Stylesheet
+ * Styletools 1.0
+ * Copyright 2019 Argan Piquet
+ * Author : Argan Piquet
+ */
+ 
+nav.horizontal_navbar {
+	color:#FFFFFF;
+	background-color:#333333;
+}
+
+ul.navbar_gateways li a:hover, ul.navbar_gateways li:hover {
+	background-color:#777777;
+}
+
+.dropdown_menu {
+	display:flex;
+	padding:0;
+	background-color:#333333;
+}
+
+ul.dropdown_menu_gateways {
+	list-style:none;
+	padding:0;
+}
+
+
+ul.dropdown_menu_gateways li, ul.dropdown_menu_gateways li a { 
+	display:inline-flex;
+	width:100%;
+	text-decoration:none;
+	padding:10px;
+	box-sizing:border-box;
+	color:#FFFFFF;
+}
+
+ul.dropdown_menu_gateways li a:hover {
+	background-color:#777777;
+}
