@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html class="no-js" lang="">
+<html class="smooth no-js" lang="">
 
 <head>
 	<meta charset="utf-8"  />
@@ -20,7 +20,7 @@
 	<title>Styletools</title>
 </head>
 
-<body>
+<body class="no_scroll">
 	<!--[if lte IE 9]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
@@ -34,7 +34,7 @@
 		
 		<ul class="navbar_gateways">
 			<li><a href="#" class="bc_transition">Link 1</a></li>
-			<li><a href="#" class="bc_transition">Link 2</a></li>
+			<li><a href="#contact" class="bc_transition">Contact</a></li>
 			<li><a href="#" onclick="document.getElementById('modal_box').style.display='block'" class="bc_transition">Modal box</a></li>
 			<li id="icon" class="bc_transition">Dropdown Menu</li>
 		</ul>
@@ -59,16 +59,22 @@
 			<div class="box_container">
 				<p>Have a nice work on your projects with the Styletools framework !</p>
 				
-				<div class="btn bc_transition">Close</div> 
+				<div class="btn bc_transition" onclick="document.getElementById('modal_box').style.display='none'">Close</div> 
 			</div>
 			
-			<footer class="box_container" id="box_teal">
+			<footer class="modal_footer box_container" id="box_teal">
 				<p style="visibility:hidden">.</p>
 			</footer>
 		</div>
 	</div>
 	
-	<h1>Hello World !</h1>
+	<section id="main">
+		<h1 class="big">Welcome on the Styletools demo !</h1>
+	</section>
+	
+	<section id="contact">
+		<p>Hello world !</p>
+	</section>
 	
 	<footer>
 		<p>&copy; <span class="copyright"></span> - Styletools</p>

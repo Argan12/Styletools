@@ -5,6 +5,10 @@
  * Author : Argan Piquet
  */
  
+body {
+	font-family:Open Sans, sans-serif;
+}
+
 nav.horizontal_navbar {
 	color:#FFFFFF;
 	background-color:#333333;
@@ -34,6 +38,28 @@ input[type=search] {
 
 .btn:hover {
 	background-color:#5E9BBC;
+}
+
+section#main, section#contact {
+	display:flex;
+	flex-direction:column;
+	width:100vw;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+}
+
+section#main {
+	background-image:url("/Styletools/demo/img/IMG_20180915_111514.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+h1.big {color:#FFFFFF;}
+
+section#contact {
+	opacity:0.8;
+	background-color:#FFFFFF;
 }
 
 footer {
