@@ -16,7 +16,7 @@
 		
 /* Display dropdown menu vertical animation */
 	$('.navicon').click(function() {
-		$('#dropdown_menu_vertical_animation').slideToggle("slow");
+		$('.vertical_navbar').animate({width:'toggle'});
 		});
 
 /*** Navicon transition ***/

@@ -13,6 +13,8 @@
 	<!-- Place favicon.ico in the root directory -->
 
 	<link rel="stylesheet" href="/Styletools/css/styletools.css"  /> <!-- Place styletools css first -->
+	<link rel="stylesheet" href="/Styletools/css/responsive_application.css"  />
+	
 	<link rel="stylesheet" href="css/normalize.css"  />
 	<link rel="stylesheet" href="css/main.css"  />
 	<link rel="stylesheet" href="css/demo.css"  />
@@ -20,12 +22,19 @@
 	<title>Styletools</title>
 </head>
 
-<body class="no_scroll">
+<body>
 	<!--[if lte IE 9]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
 
 	<nav class="horizontal_navbar">
+		<!-- Place navicon first if you want it to be on the left -->
+		<div class="navicon" onclick="naviconTransition(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		
 		<img src="img/portfolio_icon_32x32.png" alt="Styletools logo"  />
 		
 		<form class="little_form row" action="#" method="post">
@@ -33,10 +42,19 @@
 		</form>
 		
 		<ul class="navbar_gateways">
-			<li><a href="#" class="bc_transition">Link 1</a></li>
+			<li><a href="#" class="bc_transition">Introduction</a></li>
 			<li><a href="#contact" class="bc_transition">Contact</a></li>
 			<li><a href="#" onclick="document.getElementById('modal_box').style.display='block'" class="bc_transition">Modal box</a></li>
 			<li id="icon" class="bc_transition">Dropdown Menu</li>
+		</ul>
+	</nav>
+	
+	<nav class="vertical_navbar">
+		<ul class="dropdown_menu_gateways">
+			<li><a href="#" class="bc_transition">Introduction</a></li>
+			<li><a href="#contact" class="bc_transition">Contact</a></li>
+			<li><a href="#" onclick="document.getElementById('modal_box').style.display='block'" class="bc_transition">Modal box</a></li>
+			<li><a id="icon" class="bc_transition">Dropdown menu</a></li>
 		</ul>
 	</nav>
 	
@@ -47,7 +65,7 @@
 			<li class="bc_transition"><a href="#">Link 3</a></li>
 		</ul>
 	</div>
-	
+
 	<!-- Modal box -->
 	<div id="modal_box" class="modal_box">
 		<div class="modal_box_content box_animate_top box_card_4">
@@ -70,10 +88,27 @@
 	
 	<section id="main">
 		<h1 class="big">Welcome on the Styletools demo !</h1>
+		<p>Thank you for your support !</p>
 	</section>
 	
 	<section id="contact">
-		<p>Hello world !</p>
+		<h2 class="medium">Contact us</h2>
+		
+		<form class="large_form column" onsubmit="return formValidation(this)">
+			<label for="firstname">Firstname :</label>
+			<input type="text" id="firstname" name="firstname"  />
+			<label for="lastname">Lastname :</label>
+			<input type="text" id="lastname" name="lastname"  />
+			<label for="email">Mail address :</label>
+			<input type="email" id="mail" name="mail"  />
+			<label for="object">Object :</label>
+			<input type="text" id="object" name="object"  />
+			<label for="message">Message :</label>
+			<textarea class="height_transition" id="message" name="message"></textarea>
+			<input type="submit" class="btn bc_transition" value="Submit"  />
+		</form>
+		
+		<p class="red_alert">* This contact form is an example. It does not works.</p>
 	</section>
 	
 	<footer>

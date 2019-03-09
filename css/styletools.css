@@ -25,6 +25,11 @@ h1.medium {font-size:36px;}
 h1.normal {font-size:30px;}
 h1.little {font-size:24px;}
 
+h2.big {font-size:38px;}
+h2.medium {font-size:32px;}
+h2.normal {font-size:26px;}
+h2.little {font-size:20px;}
+
 /*** Wrappers ***/
 .horizontal_wrapper {
 	display:flex; 
@@ -58,7 +63,7 @@ nav.horizontal_navbar {
 }
 
 nav.vertical_navbar {
-	display:none; 
+	display:flex; 
 	flex-direction:column; 
 	position:fixed; 
 	left:0; 
@@ -166,6 +171,8 @@ form {
 
 /*** Inputs ***/
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=file], input[type=search] {
+	width:70%;
+	height:35px;
 	border-radius:5px; 
 	border:none; 
 	padding-left:15px; 
@@ -182,12 +189,19 @@ input[type=submit], input[type=reset] {
 }
 
 textarea {
+	width:70%;
+	height:150px;
 	padding:15px; 
 	border-radius:5px; 
 	border:none; 
 	resize:none; 
 	box-sizing:border-box; 
 	margin-bottom:15px;
+}
+
+label {
+	font-size:20px;
+	padding:5px;
 }
 
 /*** Buttons ***/
