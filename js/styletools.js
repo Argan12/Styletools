@@ -1,11 +1,11 @@
 /*!
- * Styletools v1.0
+ * Styletools 1.3
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */
 
 /*** Display dropdown menu ***/
-	$('.icon').click(function() {
+	$('#icon').click(function() {
 		$('.dropdown_menu').slideToggle("slow");
 		});
 	
@@ -24,16 +24,16 @@
 		x.classList.toggle("change");
 	}
 	
-/*** Display your age ***/
-	var birthdate = new Date("1997/5/29"); /* Replace by your birthdate ! */
-	var now = new Date();
-	var diff = now - birthdate;
-	var age = Math.floor(diff/31536000000);
-	
-	document.getElementById("age").innerHTML = age
-	
 /*** Copyright ***/
 	var copyrightYear = new Date();
 	var displayYear = copyrightYear.getFullYear();
 		
 	document.getElementsByClassName("copyright")[0].innerHTML = displayYear;
+	
+/*** Display your age ***/
+ 	var birthdate = new Date("1997/5/29"); /* Replace by your birthdate ! */
+	var now = new Date();
+	var diff = now - birthdate;
+	var age = Math.floor(diff/31536000000);
+	
+	document.getElementById("age").innerHTML = age;

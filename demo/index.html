@@ -27,27 +27,57 @@
 
 	<nav class="horizontal_navbar">
 		<img src="img/portfolio_icon_32x32.png" alt="Styletools logo"  />
+		
+		<form class="little_form row" action="#" method="post">
+			<input type="search" name="q" placeholder="Search.."  />
+		</form>
+		
 		<ul class="navbar_gateways">
 			<li><a href="#" class="bc_transition">Link 1</a></li>
 			<li><a href="#" class="bc_transition">Link 2</a></li>
-			<li><a href="#" class="bc_transition">Link 3</a></li>
-			<li class="bc_transition">Dropdown Menu</li>
+			<li><a href="#" onclick="document.getElementById('modal_box').style.display='block'" class="bc_transition">Modal box</a></li>
+			<li id="icon" class="bc_transition">Dropdown Menu</li>
 		</ul>
 	</nav>
 	
 	<div class="dropdown_menu">
 		<ul class="dropdown_menu_gateways">
-			<li><a href="#" class="bc_transition">Link 1</a></li>
-			<li><a href="#" class="bc_transition">Link 2</a></li>
-			<li><a href="#" class="bc_transition">Link 3</a></li>
-			<li>Link 4</li>
+			<li class="bc_transition"><a href="#">Link 1</a></li>
+			<li class="bc_transition"><a href="#">Link 2</a></li>
+			<li class="bc_transition"><a href="#">Link 3</a></li>
 		</ul>
 	</div>
 	
+	<!-- Modal box -->
+	<div id="modal_box" class="modal_box">
+		<div class="modal_box_content box_animate_top box_card_4">
+			<header class="modal_box_content" id="box_teal">
+				<span onclick="document.getElementById('modal_box').style.display='none'" class="box_button box_display_topright">&times;</span>
+				<h2>Thanks using the Styletools !</h2>
+			</header>
+		
+			<div class="box_container">
+				<p>Have a nice work on your projects with the Styletools framework !</p>
+				
+				<div class="btn bc_transition">Close</div> 
+			</div>
+			
+			<footer class="box_container" id="box_teal">
+				<p style="visibility:hidden">.</p>
+			</footer>
+		</div>
+	</div>
+	
+	<h1>Hello World !</h1>
+	
+	<footer>
+		<p>&copy; <span class="copyright"></span> - Styletools</p>
+	</footer>
+
 	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-	<script src="js/styletools.js"></script> <!-- Place styletools javascript first -->
+	<script src="/Styletools/js/styletools.js"></script> <!-- Place styletools javascript first -->
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 

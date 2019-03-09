@@ -1,5 +1,5 @@
 /*!
- * Styletools 1.0
+ * Styletools 1.3
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */
@@ -95,17 +95,68 @@ ul.navbar_gateways li, ul.navbar_gateways li a {
 	box-sizing:border-box;
 }
 
+ul.dropdown_menu_gateways {
+	list-style:none;
+	padding:0;
+}
+
+ul.dropdown_menu_gateways li, ul.dropdown_menu_gateways li a { 
+	display:inline-flex;
+	width:100%;
+	text-decoration:none;
+	padding:10px;
+	box-sizing:border-box;
+	color:#FFFFFF;
+}
+
 /*** Footers ***/
 footer {
 	display:inline-flex; 
 	width:100vw; 
 	height:auto; 
+	position:absolute;
+	bottom:0;
 	padding-left:20px; 
 	padding-right:20px; 
 	box-sizing:border-box;
 }
 
-/*** Inputs style ***/
+/*** Forms ***/
+form.row {
+	display:inline-flex;
+}
+
+form.column {
+	display:flex;
+	flex-direction:column;
+}
+
+form.little_form {
+	width:30%;
+	height:auto;
+}
+
+form.middle_form {
+	width:50%;
+	height:auto;
+}
+
+form.large_form {
+	width:70%;
+	height:auto;
+}
+
+form.xlarge_form {
+	width:90%;
+	height:auto;
+}
+
+form {
+	justify-content:center;
+	align-items:center;
+}
+
+/*** Inputs ***/
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=file], input[type=search] {
 	border-radius:5px; 
 	border:none; 
@@ -218,10 +269,6 @@ img.image_size {
 }
 
 /*** Modal Box ***/
-h4.modal {
-	padding:10px;
-}
-
 .modal_box {
 	display:none; 
 	width:100%; 
@@ -241,7 +288,8 @@ h4.modal {
 	position:relative; 
 	margin:auto; 
 	padding:0; 
-	outline:0; 
+	outline:0;
+	overflow:hidden;
 	text-align:center; 
 	background-color:#FFFFFF;
 }
@@ -316,9 +364,18 @@ h4.modal {
 
 .modal_footer {
 	position:absolute; 
-	left:0; 
+	left:0;
 	width:100%; 
-	height:20px;
+	height:10px;
+}
+
+#box_teal {
+	display:inline-flex;
+	justify-content:center;
+	align-items:center;
+	height:45px;
+	color:#FFFFFF;
+	background-color:#333333;
 }
 
 #box_color, #box-hover-color:hover {
