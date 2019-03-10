@@ -10,6 +10,6 @@ namespace Styletools\App\Controllers;
 
 class DefaultController {
 	public function indexAction() {
-		require('app/views/default/index.php');
+		require('src/app/views/default/index.php');
 	}
 }
