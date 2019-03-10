@@ -55,12 +55,10 @@ class Route {
 	}
 	
 	public function call() {
-		$dir = basename(dirname($_SERVER['SCRIPT_NAME']));
-		
 		if (is_string($this->callable))
 		{
 			$params = explode('#', $this->callable);
-			$controller = "$dir\\App\\Controllers\\".$params[0]."Controller";
+			$controller = "Styletools\\App\\Controllers\\".$params[0]."Controller";
 			$controller = new $controller();
 			return call_user_func_array([$controller, $params[1]], $this->matches);
 		} else {

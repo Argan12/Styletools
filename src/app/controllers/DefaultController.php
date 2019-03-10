@@ -5,7 +5,7 @@
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */
- 
+
 namespace Styletools\App\Controllers;
 
 class DefaultController {
