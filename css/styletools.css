@@ -9,7 +9,7 @@ html.smooth {
 }
 
 body {
-	width:100%; 
+	width:100vw; 
 	margin:0; 
 	text-align:left; 
 	overflow-x:hidden; 
