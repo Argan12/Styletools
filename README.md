@@ -30,4 +30,4 @@ Originally, I outsourced CSS code of all my projects in one file.
 * On the Web directory, you can add your css and js files and your images.
 * The index.php file on the root is the main router. In this file, you'll add your routes.
 
-** Important ** :  Styletools stylesheets must be placed first, before all your css files. It's the same for the javascripts files.
+**Important** :  Styletools stylesheets must be placed first, before all your css files. It's the same for the javascripts files.
