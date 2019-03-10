@@ -18,7 +18,7 @@
 	<meta property="og:url" content=""  />
 	<meta property="og:description" content=""  />
 	
-	<link rel="manifest" href=""  />
+	<link rel="manifest" href="manifest.json"  />
 	
 	<meta name="mobile-web-app-capable" content="yes"  />
 	<meta name="apple-mobile-web-app-capable" content="yes"  />
