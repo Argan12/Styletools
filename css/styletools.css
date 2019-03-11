@@ -20,6 +20,7 @@ body.no_scroll {
 	overflow-y:hidden;
 }
 
+/*** Headlines ***/
 h1.big {font-size:42px;}
 h1.medium {font-size:36px;}
 h1.normal {font-size:30px;}
@@ -29,6 +30,25 @@ h2.big {font-size:38px;}
 h2.medium {font-size:32px;}
 h2.normal {font-size:26px;}
 h2.little {font-size:20px;}
+
+h3.big {font-size:34px;}
+h3.medium {font-size:28px;}
+h3.normal {font-size:22px;}
+h3.little {font-size:16px;}
+
+h4.big {font-size:30px;}
+h4.medium {font-size:24px;}
+h4.normal {font-size:18px;}
+h4.little {font-size:14px;}
+
+h5.big {font-size:26px;}
+h5.medium {font-size:20px;}
+h5.normal {font-size:14px;}
+h5.little {font-size:10px;}
+
+h6.big {font-size:22px;}
+h6.medium {font-size:16px;}
+h6.normal {font-size:10px;}
 
 /*** Wrappers ***/
 .horizontal_wrapper {
@@ -445,3 +465,29 @@ img.image_size {
 .red_alert {
 	color:#CC2F00;
 }
+
+.validMsg {
+	color:#002F00;
+}
+
+/*** Colors ***/
+.black {color:#000000;}
+.white {color:#FFFFFF;}
+.white_smoke {color:#E0E0E0;}
+.clear_gray {color:#A5A5A5;}
+.gray {color:#BEBEBE;}
+.dark_gray {color:#777777;}
+.anthracite_grey {color:#333333;}
+.fluo_green {color:#4CFF00;}
+.grass_green {color:#61CC00;}
+.green {color:#007F0E;}
+.dark_green {color:004C07;}
+.turquoise {color:#00FFFF;}
+.skyblue {color:#68ACD1;}
+.blue {color;#0098EA;}
+.darkblue {color:#00456B;}
+.greenblue {color:#49C6AB;}
+.orange {color:#FF7F00;}
+.salmon {color:#FFAD56;}
+.red {color:#FF0000;}
+.orangered {color:#FF3E00;}

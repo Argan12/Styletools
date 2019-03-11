@@ -26,6 +26,16 @@ ul.dropdown_menu_gateways li:hover {
 	background-color:#777777;
 }
 
+nav.vertical_navbar {
+	display:none;
+}
+
+@media screen and (min-width:1200px) {
+	.navicon {
+		display:none;
+	}
+}
+
 input[type=search] {
 	width:70%;
 	height:35px;
@@ -51,7 +61,7 @@ section#main, section#contact {
 }
 
 section#main {
-	background-image:url("/Styletools/demo/img/IMG_20180915_111514.jpg");
+	background-image:url("../img/IMG_20180915_111514.jpg");
 	background-attachment:fixed;
 	background-size:cover;
 }
@@ -88,7 +98,25 @@ footer {
 	background-color:#333333;
 }
 
+@media screen and (min-width:992px) and (max-width:1199px) {
+	.navicon {
+		display:none;
+	}
+	
+	nav.vertical_navbar {
+		display:none;
+	}
+}
+
 @media screen and (min-width:768px) and (max-width:991px) {
+	.navicon {
+		display:none;
+	}
+	
+	nav.vertical_navbar {
+		display:none;
+	}
+	
 	input[type=search] {
 		width:100%;
 	}
@@ -100,11 +128,16 @@ footer {
 	}
 	
 	nav.vertical_navbar {
+		display:none;
 		margin-top:70px;
 		border-top:1px solid #FFFFFF;
 		background-color:#333333;
 	}
 	
+	ul.navbar_gateways {
+		display:none;
+	}
+
 	nav.vertical_navbar ul li {
 		font-size:22px;
 	}
@@ -125,9 +158,14 @@ footer {
 	}
 	
 	nav.vertical_navbar {
+		display:none;
 		margin-top:70px;
 		border-top:1px solid #FFFFFF;
 		background-color:#333333;
+	}
+	
+	ul.navbar_gateways {
+		display:none;
 	}
 	
 	section#main, section#contact {

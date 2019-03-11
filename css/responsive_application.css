@@ -4,21 +4,49 @@
  * Author : Argan Piquet
  */
  
+@media screen and (min-width:992px) and (max-width:1199px) {
+	body {overflow-x:hidden;}
+	
+	ul.navbar_gateways {
+		width:55%;
+		margin-right:15px;
+	}
+	
+	ul.navbar_gateways li, ul.navbar_gateways li a {
+		font-size:18px;
+	}
+	
+	/* Dropdown menu */
+	.dropdown_menu {
+		width:40%;
+	}
+	
+	ul.dropdown_menu_gateways li, ul.dropdown_menu_gateways li a {
+		font-size:20px;
+	}
+	
+	.btn {
+		font-size:18px;
+	}
+	
+	/* Inputs */
+	input[type=text], input[type=email], input[type=password], input[type=date], input[type=file], input[type=search], textarea {
+		font-size:18px;
+	}
+	
+	footer {
+		font-size:20px;
+	}
+}
+
 /*** Medium screens ***/
 @media screen and (min-width:768px) and (max-width:991px) {
 	body {overflow-x:hidden;}
 	
-	/* Navbar */
-	.navicon {
-		display:none;
-	}
-	
-	nav.vertical_navbar {
-		display:none;
-	}
-	
+	/* Navbar */	
 	ul.navbar_gateways {
 		width:50%;
+		margin-right:15px;
 	}
 	
 	ul.navbar_gateways li, ul.navbar_gateways li a {
@@ -43,19 +71,18 @@
 	.btn {
 		font-size:18px;
 	}
+	
+	footer {
+		font-size:20px;
+	}
 }
 
 /*** Small screens ***/
 @media screen and (min-width:544px) and (max-width:767px) {
 	body {overflow-x:hidden;}
 	
-	/* Navbar */
-	ul.navbar_gateways {
-		display:none;
-	}
-	
+	/* Navbar */	
 	nav.vertical_navbar {
-		display:none;
 		width:100%;
 	}
 	
@@ -73,6 +100,10 @@
 		width:100%;
 		padding:10px;
 	}
+	
+	footer {
+		font-size:20px;
+	}
 }
 
 /*** X Small screens ***/
@@ -80,13 +111,12 @@
 	body {overflow-x:hidden;}
 	
 	/* Navbar */
-	ul.navbar_gateways {
-		display:none;
+	nav.vertical_navbar {
+		width:100%;
 	}
 	
-	nav.vertical_navbar {
-		display:none;
-		width:100%;
+	ul.dropdown_menu_gateways li, ul.dropdown_menu_gateways li a {
+		font-size:20px;
 	}
 	
 	/* Forms */
@@ -99,6 +129,10 @@
 		width:90%;
 	}
 	
+	.btn {
+		font-size:18px;
+	}
+	
 	/* Modal box */
 	.modal_box_content {
 		width:80%;
@@ -107,5 +141,9 @@
 	#box_teal {
 		width:100%;
 		padding:10px;
+	}
+	
+	footer {
+		font-size:20px;
 	}
 }
