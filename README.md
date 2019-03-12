@@ -1,33 +1,31 @@
 # Styletools
 
-## What is the Styletools ?
+## What is Styletools ?
 
-Styletools is a little framework I developped for my personnal needs.
+Styletools is a little framework developed by myself for my personal needs.
 
 This frameworks contains :
-* prefabricated stylesheets (including responsive)
-* MVC architecture (including routers and .htaccess file)
-* HTML template
-* webmanifest for progressive web app
-* a demo
+* stylesheets (including responsive).
+* MVC architecture (including routers and .htaccess file).
+* HTML template.
+* webmanifest for progressive web app.
+* demo.
 
-Originally, I outsourced CSS code of all my projects in one file.
+## How does it work ?
 
-## How does it works ?
+### Front-End development (HTML/CSS)
 
-### Front developpers (HTML/CSS)
+* Copy "dist" and "templates" directories. Dist contains minified CSS and JavaScript files, and Templates contains a HTML template.
+* Paste these directories in your project directory.
+* Update meta tags on template.html file.
+* Develop your application on this file.
 
-* Copy "dist" and "templates" directories. Dist contains minified CSS and JavaScript, and Templates contains a HTML template.
-* Paste these directories on your project directory.
-* Complete meta tags on template.html file.
-* And you can develop your application on this file
+### Back-End development (PHP/MySQL)
 
-### Back developpers (PHP)
+* Include your project on Styletools directory. First, rename Styletools directory by your project's name.
+* Work on "src" directory. On the "app" folder, lies MVC architecture. Controllers contains your controllers, Models folder contains your models (database connexion is included), and the Views directory contains HTML files. A layout is included as well.
+* Libs directory contains routers.
+* Web directory contains your css and js files and your images.
+* index.php file on the root is the main router. In this file, you'll add your routes.
 
-* You will include your project on the Styletools directory. First, you can rename Styletools directory by your project's name.
-* You will work on "src" directory. On the "app", you've got the MVC architecture. Controllers directory contains your controllers, Models directory contains your models (database connexion is include), and the Views directory contains your HTML files. A layout is include.
-* Libs directory contains routers, but you can add your project's core.
-* On the Web directory, you can add your css and js files and your images.
-* The index.php file on the root is the main router. In this file, you'll add your routes.
-
-**Important** :  Styletools stylesheets must be placed first, before all your css files. It's the same for the javascripts files.
+**Important** :  Stylesheets of Styletools must be placed first, before all your css files. It's the same for javascript files.
