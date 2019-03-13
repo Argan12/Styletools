@@ -8,7 +8,7 @@
  
 namespace Styletools\Libs;
 
-require_once('Route.php');
+require_once('vendor/autoload.php');
 
 use \Styletools\Libs\Route;
 

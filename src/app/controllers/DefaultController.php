@@ -8,6 +8,8 @@
 
 namespace Styletools\Controllers;
 
+require_once('vendor/autoload.php');
+
 class DefaultController {
 	public function indexAction() {
 		require('src/app/views/default/index.php');

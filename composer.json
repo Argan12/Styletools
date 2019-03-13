@@ -1,0 +1,20 @@
+{
+    "name": "argan/styletools",
+    "description": "personnal framework",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Argan",
+            "email": "argan.piquet@gmail.com"
+        }
+    ],
+    "require": {},
+	"autoload": {
+		"psr-4": {
+			"Styletools\\Models\\": "src/app/models/",
+			"Styletools\\Controllers\\": "src/app/controllers/",
+			"Styletools\\Libs\\": "src/libs/",
+			"Styletools\\": ""
+		}
+	}
+}

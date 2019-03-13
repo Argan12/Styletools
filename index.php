@@ -8,8 +8,7 @@
  
 namespace Styletools;
 
-require_once('src/libs/Router.php');
-require_once('src/app/controllers/DefaultController.php');
+require_once('vendor/autoload.php');
 
 use \Styletools\Libs\Router;
 use \Styletools\Controllers\DefaultController;
