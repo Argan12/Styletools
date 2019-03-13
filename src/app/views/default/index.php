@@ -1,6 +1,11 @@
 <?php
 	ob_start();
-	$stylesheets = '<link rel="stylesheet" href="/Styletools/src/web/css/main.css"  />';
+	
+	require_once('vendor/autoload.php');
+	use \Styletools\Libs\StylesheetsLoader;
+	$css = new StylesheetsLoader();
+	$stylesheets = $css->addStylesheet('main');
+	
 	$title = 'Welcome on the Styletools';
 ?>
 
