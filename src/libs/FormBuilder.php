@@ -8,7 +8,7 @@
 
 namespace Styletools\Libs;
 
-class Form {
+class FormBuilder {
 	private $xhtml;
     
     public function __construct($xhtml = true) {
