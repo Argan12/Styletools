@@ -6,7 +6,7 @@
  * Author : Argan Piquet
  */
 
-namespace Styletools\App\Controllers;
+namespace Styletools\Controllers;
 
 class DefaultController {
 	public function indexAction() {

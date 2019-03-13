@@ -6,7 +6,7 @@
  * Author : Argan Piquet
  */
 
-namespace Styletools\Libs\StyletoolsFrame;
+namespace Styletools\Libs;
 
 class Form {
 	private $xhtml;

@@ -6,7 +6,7 @@
  * Author : Argan Piquet
  */
  
-namespace Styletools\App\Models;
+namespace Styletools\Models;
 
 require_once('src/app/models/DatabaseManager.php');
 

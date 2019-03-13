@@ -6,11 +6,11 @@
  * Author : Argan Piquet
  */
  
-namespace Styletools\Libs\StyletoolsFrame;
+namespace Styletools\Libs;
 
 require_once('Route.php');
 
-use \Styletools\Libs\StyletoolsFrame\Router;
+use \Styletools\Libs\Route;
 
 class Router {
 	private $url;

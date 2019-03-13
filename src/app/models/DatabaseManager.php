@@ -6,7 +6,7 @@
  * Author : Argan Piquet
  */
  
-namespace Styletools\App\Models;
+namespace Styletools\Models;
 
 class DatabaseManager {
 	public static function getConnexion() {
