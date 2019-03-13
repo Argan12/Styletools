@@ -64,9 +64,16 @@ h6.normal {font-size:10px;}
 	width:100%; 
 	height:auto;
 }
-	/* @media screen and (max-width:768px) {
-		.vertical_wrapper {display:flex; flex-direction:column;}
-	} */
+
+/*** Div orientation ***/
+.row {
+	display:inline-flex;
+}
+
+.column {
+	display:flex;
+	flex-direction:column;
+}
 
 /*** Navbar ***/
 nav.horizontal_navbar {
