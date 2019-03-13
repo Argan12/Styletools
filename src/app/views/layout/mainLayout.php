@@ -40,10 +40,15 @@
 	<link rel="icon" href="" sizes="32x32" />
 	<link rel="icon" href="" sizes="16x16" />
 	
-	<link rel="stylesheet" href="/Styletools/dist/css/styletools.min.css"  />
-	<link rel="stylesheet" href="/Styletools/dist/css/responsive_application.min.css"  />
-	
-	<?= $stylesheets; ?>
+	<link rel="stylesheet" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/dist/css/styletools.min.css"  />
+	<link rel="stylesheet" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/dist/css/responsive_application.min.css"  />
+
+	<?php
+		foreach ($stylesheets as $css)
+		{
+			echo $css. PHP_EOL;
+		}
+	?>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
 	
@@ -61,9 +66,14 @@
 	<script src="/Styletools/dist/js/vendor/modernizr-3.6.0.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/Styletools/dist/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-	<script src="/Styletools/dist/js/styletools.min.js"></script>
+	<script src="<?= dirname($_SERVER["PHP_SELF"]); ?>/dist/js/styletools.min.js"></script>
 
-	<?= $javascripts; ?>
+	<?php
+		foreach ($javascripts as $js)
+		{
+			echo $js. PHP_EOL;
+		}
+	?>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<script>
