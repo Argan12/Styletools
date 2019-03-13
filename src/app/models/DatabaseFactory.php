@@ -8,7 +8,7 @@
  
 namespace Styletools\Models;
 
-class DatabaseManager {
+class DatabaseFactory {
 	public static function getConnexion() {
 		$host = '';
 		$dbname = '';

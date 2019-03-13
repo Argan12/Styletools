@@ -8,9 +8,9 @@
  
 namespace Styletools\Models;
 
-require_once('src/app/models/DatabaseManager.php');
+require_once('src/app/models/DatabaseFactory.php');
 
-class DefaultManager extends DatabaseManager {
+class DefaultManager extends DatabaseFactory {
 	public function example() {
 		/* Your code here */
 	}
