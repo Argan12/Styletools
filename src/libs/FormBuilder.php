@@ -16,7 +16,7 @@ class FormBuilder {
     }
 	
 	public function startForm($action = '#', $method = '', $attr = array()) {
-		$formTag = "<form action = \"$action\" method = \"$method\"";
+		$formTag = "<form action=\"$action\" method=\"$method\"";
 		
 		if ($attr)
 		{
@@ -49,11 +49,11 @@ class FormBuilder {
 	}
 	
 	public function newInput($type, $name, $value = '', $attr = array()) {
-		$formTag = "<input type = \"$type\" name = \"$name\"";
+		$formTag = "<input type=\"$type\" name=\"$name\"";
 		
 		if (!empty($value))
 		{
-			$formTag .= " value = \"$value\"";
+			$formTag .= " value=\"$value\"";
 		}
 		
 		if ($attr) {
@@ -66,11 +66,11 @@ class FormBuilder {
 	}
 	
 	public function newTextarea($name, $cols = '', $rows = '', $value = '') {
-		$formTag = "<textarea name = \"$name\"";
+		$formTag = "<textarea name =\"$name\"";
 		
 		if (!empty($cols) && !empty($rows))
 		{
-			$formTag .= " cols = \"$cols\" rows = \"$rows\"";
+			$formTag .= " cols=\"$cols\" rows=\"$rows\"";
 		}
 		
 		if (!empty($value))
@@ -84,7 +84,7 @@ class FormBuilder {
 	}
 
 	public function newLabel($for, $label) {
-		$formTag = "<label for = \"$for\">$label</label>";
+		$formTag = "<label for=\"$for\">$label</label>";
 		
 		return $formTag;		
 	}
