@@ -14,7 +14,7 @@ class DatabaseFactory {
 		$dbname = '';
 		$charset = 'utf8';
 		$root = '';
-		$password '';
+		$password = '';
 		
 		$database = new \PDO('mysql:host='.$host.';dbname='.$dbname.';charset='.$charset, $root, $password);
 		$database->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
