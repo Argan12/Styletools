@@ -57,8 +57,8 @@ class Router {
 				return $route->call();
 			}
 		}
-		
-		require('App/Views/Error/404.php');
+
+		require('src/app/views/error/404.php');
 	}
 	
 	public function url($name, $params = []) {
