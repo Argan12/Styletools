@@ -10,8 +10,10 @@
 	
 	$title = 'Welcome on the Styletools';
 ?>
-
-	<h1 style="text-align:center" class="medium">Welcome on the Styletools !</h1>
+	
+	<div id="example" class="column bc_whitesmoke">
+		<h1 style="text-align:center" class="medium">Welcome on the Styletools !</h1>
+	</div>
 
 <?php
 	$javascripts = array(

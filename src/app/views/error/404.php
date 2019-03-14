@@ -11,7 +11,10 @@
 	$title = 'Welcome on the Styletools';
 ?>
 
-	<h1 style="text-align:center" class="normal">404 Error. This page doesn't exist</h1>
+	<div id="example" class="column bc_whitesmoke">
+		<h1 style="text-align:center" class="normal">404 Error</h1> 
+		<p>This page doesn't exist</p>
+	</div>
 
 <?php
 	$javascripts = array(

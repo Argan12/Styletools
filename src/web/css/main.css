@@ -1,1 +1,15 @@
- 
+body {
+	display:inline-flex;
+	align-items:center;
+	font-family:Open Sans, sans-serif;
+}
+
+#example {
+	width:70%;
+	margin:auto;
+} 
+
+p {
+	font-size:20px;
+	text-align:center;
+}
