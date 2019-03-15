@@ -51,6 +51,27 @@ h6.big {font-size:22px;}
 h6.medium {font-size:16px;}
 h6.normal {font-size:10px;}
 
+/*** Horizontal rule ***/
+hr {
+	width:100%;
+}
+
+hr.solid_weight {
+	border:2px solid;
+}
+
+hr.solid_thin {
+	border:1px solid;
+}
+
+hr.dashed_weight {
+	border:2px dashed;
+}
+
+hr.dashed_thin {
+	border:1px dashed;
+}
+
 /*** Wrappers ***/
 .horizontal_wrapper {
 	display:flex; 
