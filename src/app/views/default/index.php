@@ -13,7 +13,7 @@
 	
 	<div id="example" class="column bc_whitesmoke">
 		<h1 style="text-align:center" class="medium">Welcome on the Styletools 1.3 !</h1>
-				<hr class="dashed_thin orange">
+
 		<ul>
 			<h2 class="little">To start a new project :</h2>
 			<li>Rename Stytetools' directory by your project's name</li>
