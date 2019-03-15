@@ -12,7 +12,15 @@
 ?>
 	
 	<div id="example" class="column bc_whitesmoke">
-		<h1 style="text-align:center" class="medium">Welcome on the Styletools !</h1>
+		<h1 style="text-align:center" class="medium">Welcome on the Styletools 1.3 !</h1>
+		
+		<ul>
+			<h2 class="little">To start a new project :</h2>
+			<li>Rename Stytetools' directory by your project's name</li>
+			<li>Work on src folder</li>
+			<li>Customize your views, configure your routes, write your controllers</li>
+			<li>It's up to you !</li>
+		</ul>
 	</div>
 
 <?php
