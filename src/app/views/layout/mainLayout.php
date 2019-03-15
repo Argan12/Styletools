@@ -27,19 +27,19 @@
 	<meta name="msapplication-starturl" content="/"  />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"  />
 	
-	<link rel="apple-touch-icon" href="" sizes="57x57"  />
-	<link rel="apple-touch-icon" href="" sizes="60x60"  />
-	<link rel="apple-touch-icon" href="" sizes="72x72"  />
-	<link rel="apple-touch-icon" href="" sizes="76x76"  />
-	<link rel="apple-touch-icon" href="" sizes="114x114"  />
-	<link rel="apple-touch-icon" href="" sizes="120x120"  />
-	<link rel="apple-touch-icon" href="" sizes="152x152"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_57x57.png" sizes="57x57"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_60x60.png" sizes="60x60"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_72x72.png" sizes="72x72"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_76x76.png" sizes="76x76"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_114x114.png" sizes="114x114"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_120x120.png" sizes="120x120"  />
+	<link rel="apple-touch-icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_apple_152x152.png" sizes="152x152"  />
 	
-	<link rel="icon" href="" sizes="196x196" />
-	<link rel="icon" href="" sizes="96x96" />
-	<link rel="icon" href="" sizes="32x32" />
-	<link rel="icon" href="" sizes="16x16" />
-	
+	<link rel="icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_16x16.png" sizes="16x16" />	
+	<link rel="icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_32x32.png" sizes="32x32" />
+	<link rel="icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_96x96.png" sizes="96x96" />
+	<link rel="icon" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/src/web/img/logo/styletools_196x196.png" sizes="196x196" />	
+
 	<link rel="stylesheet" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/dist/css/styletools.min.css"  />
 	<link rel="stylesheet" href="<?= dirname($_SERVER["PHP_SELF"]); ?>/dist/css/responsive_application.min.css"  />
 
