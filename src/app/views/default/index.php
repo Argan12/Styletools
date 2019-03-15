@@ -18,7 +18,7 @@
 			<h2 class="little">To start a new project :</h2>
 			<li>Rename Stytetools' directory by your project's name</li>
 			<li>Work on src folder</li>
-			<li>Customize your views, configure your routes, write your controllers</li>
+			<li>Customize your views, configure your routes, write your controllers &hellip;</li>
 			<li>It's up to you !</li>
 		</ul>
 	</div>
