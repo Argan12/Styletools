@@ -65,7 +65,7 @@ class FormBuilder {
 		return $formTag;
 	}
 	
-	public function newTextarea($name, $cols = '', $rows = '', $value = '') {
+	public function newTextarea($name, $cols = '', $rows = '', $value = '', $attr = array()) {
 		$formTag = "<textarea name =\"$name\"";
 		
 		if (!empty($cols) && !empty($rows))
@@ -73,11 +73,18 @@ class FormBuilder {
 			$formTag .= " cols=\"$cols\" rows=\"$rows\"";
 		}
 		
+		if ($attr)
+		{
+			$formTag .= $this->attr($attr) . '>';
+		} else {
+			$formTag .= '>';
+		}
+		
 		if (!empty($value))
 		{
-			$formTag .= ">$value</textarea>"; 
+			$formTag .= "$value</textarea>"; 
 		} else {
-			$formTag .= '></textarea>';	
+			$formTag .= '</textarea>';	
 		}
 		
 		return $formTag;
