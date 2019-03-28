@@ -1,3 +1,10 @@
+/*!
+ * Styletools Demo JS
+ * Styletools 1.4
+ * Copyright 2019 Argan Piquet
+ * Author : Argan Piquet
+ */
+
 function formValidation() {
 	var firstname = $('#firstname').val();
 	var lastname = $('#lastname').val();

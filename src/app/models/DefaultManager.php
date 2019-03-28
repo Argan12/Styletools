@@ -1,7 +1,7 @@
 <?php
 
 /*!
- * Styletools 1.3
+ * Styletools 1.4
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */

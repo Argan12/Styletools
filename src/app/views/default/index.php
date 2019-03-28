@@ -12,7 +12,7 @@
 ?>
 	
 	<div id="example" class="column bc_whitesmoke">
-		<h1 style="text-align:center" class="medium">Welcome on the Styletools 1.3 !</h1>
+		<h1 style="text-align:center" class="medium">Welcome on the Styletools 1.4 !</h1>
 
 		<ul>
 			<h2 class="little">To start a new project :</h2>
