@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Styletools\\Models\\' => array($baseDir . '/src/app/models'),
-    'Styletools\\Libs\\' => array($baseDir . '/src/libs'),
+    'Styletools\\Libs\\' => array($baseDir . '/src/libs/styletoolsframe'),
     'Styletools\\Controllers\\' => array($baseDir . '/src/app/controllers'),
     'Styletools\\' => array($baseDir . '/'),
 );

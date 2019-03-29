@@ -23,7 +23,7 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
         ),
         'Styletools\\Libs\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/libs',
+            0 => __DIR__ . '/../..' . '/src/libs/styletoolsframe',
         ),
         'Styletools\\Controllers\\' => 
         array (
