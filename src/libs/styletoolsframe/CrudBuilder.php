@@ -10,7 +10,7 @@ namespace Styletools\Models;
 
 require_once('src/app/models/DatabaseFactory.php');
 
-class CrudManager extends DatabaseFactory {
+class CrudBuilder extends DatabaseFactory {
 	public function createElement($tableName, array $fields, $value) {
 		$fieldsName = '';
 		$aliasName = '';
