@@ -558,6 +558,41 @@ img.image_size {
 	color:#002F00;
 }
 
+/*** Text align ***/
+.center {
+	text-align:center;
+}
+
+.left {
+	text-align:left;
+}
+
+.right {
+	text-align:right;
+}
+
+/*** Text decoration ***/
+.no_underline {
+	text-decoration:none;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+/*** Font style ***/
+.bold {
+	font-weight:bold;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.normal {
+	font-style:normal;
+}
+
 /*** Colors ***/
 .black {color:#000000;}
 .white {color:#FFFFFF;}
