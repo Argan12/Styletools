@@ -23,7 +23,7 @@
 			<li>It's up to you !</li>
 		</ul>
 	</div>
-
+	
 <?php
 	$javascripts = array(
 		FilesLoader::load('js', 'main')
