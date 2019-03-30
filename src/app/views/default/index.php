@@ -3,6 +3,7 @@
 	
 	require_once('vendor/autoload.php');
 	use \Styletools\Libs\FilesLoader;
+	use \Styletools\Libs\StylesFactory;
 	
 	$stylesheets = array(
 		FilesLoader::load('css', 'main')
