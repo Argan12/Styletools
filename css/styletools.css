@@ -485,6 +485,65 @@ img.image_size {
 	-moz-animation: animation 2s ease-in-out;
 }
 
+/*** Progress bars ***/
+.bar {
+	width: 30em;
+	height: 1em;
+	position: relative;
+	border-radius: .5em;
+	background: #f2f2f2;
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1)
+}
+
+.bar .percentage {
+	position: relative;
+	font-size: 1em;
+	background: tomato;
+	height: 1em;
+	border-radius: .5em
+}
+
+.has-tip:after, .has-tip:before {
+	content: "";
+	position: absolute;
+	opacity: 0
+}
+
+.has-tip:before {
+	bottom: -10px;
+	right: -5px;
+	border: 5px solid;
+	border-color: transparent transparent tomato transparent;
+	transition: opacity .1s
+}
+
+.has-tip.active:before, .has-tip:hover:before {
+	opacity: 1
+}
+
+.has-tip:after {
+	content: attr(perc);
+	bottom: 0;
+	right: 0;
+	white-space: nowrap;
+	padding: .6em 1em;
+	border-radius: 2em;
+	line-height: 1;
+	color: #fff;
+	background: tomato;
+	-webkit-transform: translateX(50%) translateY(100%);
+	transform: translateX(50%) translateY(100%);
+	transition: opacity .1s, -webkit-transform .2s;
+	transition: transform .2s, opacity .1s;
+	transition: transform .2s, opacity .1s, -webkit-transform .2s
+}
+
+.has-tip.active:after, .has-tip:hover:after {
+	opacity: 1;
+	-webkit-transform: translateX(50%) translateY(100%) translateY(10px);
+	transform: translateX(50%) translateY(100%) translateY(10px)
+}
+
 /*** Errors ***/
 .errorMsg, .errorForm {
 	font-size:18px; 

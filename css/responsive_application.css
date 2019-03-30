@@ -34,6 +34,11 @@
 		font-size:18px;
 	}
 	
+	/* Progress bars */
+	.bar {
+		width: 70%
+	}
+	
 	footer {
 		font-size:20px;
 	}
@@ -72,6 +77,11 @@
 		font-size:18px;
 	}
 	
+	/* Progress bars */
+	.bar {
+		width: 80%
+	}
+	
 	footer {
 		font-size:20px;
 	}
@@ -99,6 +109,13 @@
 	#box_teal {
 		width:100%;
 		padding:10px;
+	}
+	
+	/* Progress bars */
+	.bar {
+		width: 80%;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 	
 	footer {
@@ -141,6 +158,13 @@
 	#box_teal {
 		width:100%;
 		padding:10px;
+	}
+	
+	/* Progress bars */
+	.bar {
+		width: 80%;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 	
 	footer {
