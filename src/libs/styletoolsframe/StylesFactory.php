@@ -76,4 +76,12 @@ class StylesFactory {
 			</nav>
 		";
 	}
+	
+	public static function getProgressBar() {
+		return "
+			<div class=\"bar\">
+				<div class=\"percentage has-tip\" data-perc=\"50%\" style=\"width:50%\"></div>
+			</div>
+		";
+	}
 }
