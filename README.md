@@ -4,7 +4,7 @@
 
 Styletools is a little framework developed by myself for my personal needs.
 
-This frameworks contains :
+This framework contains :
 * stylesheets (including responsive).
 * MVC architecture (including routers and .htaccess file).
 * HTML template.
