@@ -6,7 +6,7 @@
  * Author : Argan Piquet
  */
 
-namespace Styletools\Models;
+namespace Styletools\Libs;
 
 require_once('src/app/models/DatabaseFactory.php');
 

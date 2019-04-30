@@ -10,7 +10,7 @@ return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Styletools\\Models\\' => array($baseDir . '/src/app/models'),
-    'Styletools\\Libs\\' => array($baseDir . '/src/libs/styletoolsframe'),
+    'Styletools\\Libs\\' => array($vendorDir . '/styletools'),
     'Styletools\\Controllers\\' => array($baseDir . '/src/app/controllers'),
     'Styletools\\' => array($baseDir . '/'),
 );
