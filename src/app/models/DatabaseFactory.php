@@ -1,5 +1,4 @@
 <?php
-
 /*!
  * Styletools 1.5
  * Copyright 2019 Argan Piquet

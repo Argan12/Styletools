@@ -1,7 +1,6 @@
 <?php
-
 /*!
- * Styletools 1.4
+ * Styletools 1.5
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */
@@ -10,24 +9,15 @@ namespace Styletools\Controllers;
 
 require_once('vendor/autoload.php');
 
-use Styletools\Libs\Controller;
-use Styletools\Libs\FilesLoader;
-use Styletools\Libs\StylesFactory;
+use Styletools\Libs\Controller\Controller;
+use Styletools\Styles\StylesContainer;
 
 class DefaultController extends Controller {
-	public function indexAction() {
-		return $this->render('src/app/views/default/index.php');
-	}
-	
-	public function testTwig() {
-		$stylesheets = array(
-			FilesLoader::load('css', 'main'),
-			FilesLoader::load('css', 'toto')
-		);
+	public function indexAction() {		
+		$stylesheets = StylesContainer::addStylesheets();
 		
-		echo $this->render('default/test.html.twig', [
-			'stylesheets' => $stylesheets,
-			'navicon' => StylesFactory::getNavicon()
+		echo $this->render('default/index.html.twig', [
+			'stylesheets' => $stylesheets
 		]);
 	}
 }

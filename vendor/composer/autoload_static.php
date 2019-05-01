@@ -20,8 +20,13 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Styletools\\Styles\\' => 18,
             'Styletools\\Models\\' => 18,
+            'Styletools\\Libs\\Router\\' => 23,
+            'Styletools\\Libs\\Controller\\' => 27,
+            'Styletools\\Libs\\Console\\' => 24,
             'Styletools\\Libs\\' => 16,
+            'Styletools\\Forms\\' => 17,
             'Styletools\\Controllers\\' => 23,
             'Styletools\\' => 11,
         ),
@@ -40,13 +45,33 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Styletools\\Styles\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/styles',
+        ),
         'Styletools\\Models\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/app/models',
         ),
+        'Styletools\\Libs\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/styletools/router',
+        ),
+        'Styletools\\Libs\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/styletools/controller',
+        ),
+        'Styletools\\Libs\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/styletools/console',
+        ),
         'Styletools\\Libs\\' => 
         array (
-            0 => __DIR__ . '/..' . '/styletools',
+            0 => __DIR__ . '/..' . '/styletools/libs',
+        ),
+        'Styletools\\Forms\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/forms',
         ),
         'Styletools\\Controllers\\' => 
         array (

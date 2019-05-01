@@ -6,11 +6,12 @@
  * Author : Argan Piquet
  */
  
-namespace Styletools\Libs;
+namespace Styletools\Libs\Router;
 
 require_once('vendor/autoload.php');
 
-use \Styletools\Libs\Route;
+use \Styletools\Libs\Router\Route;
+use \Styletools\Libs\FilesLoader;
 
 class Router {
 	private $url;
@@ -45,6 +46,15 @@ class Router {
 	}
 	
 	public function run() {
+		$loader = new \Twig_Loader_Filesystem('src/app/views');
+		$twig = new \Twig_Environment($loader, [
+			'cache' => false,
+		]);
+		
+		$stylesheets = array(
+			FilesLoader::load('css', 'main')
+		);
+		
 		if (!isset($this->routes[$_SERVER['REQUEST_METHOD']]))
 		{
 			throw new \Exception('REQUEST_METHOD does not exist');
@@ -57,8 +67,10 @@ class Router {
 				return $route->call();
 			}
 		}
-
-		require('src/app/views/error/404.php');
+		
+		echo $twig->render('error/404.html.twig', [
+			'stylesheets' => $stylesheets
+		]);
 	}
 	
 	public function url($name, $params = []) {

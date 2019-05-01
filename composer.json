@@ -15,7 +15,12 @@
 		"psr-4": {
 			"Styletools\\Models\\": "src/app/models/",
 			"Styletools\\Controllers\\": "src/app/controllers/",
-			"Styletools\\Libs\\": "vendor/styletools/",
+			"Styletools\\Styles\\": "src/styles/",
+			"Styletools\\Forms\\": "src/forms/",
+			"Styletools\\Libs\\": "vendor/styletools/libs/",
+			"Styletools\\Libs\\Controller\\": "vendor/styletools/controller/",
+			"Styletools\\Libs\\Router\\": "vendor/styletools/router/",
+			"Styletools\\Libs\\Console\\": "vendor/styletools/console/",
 			"Styletools\\": ""
 		}
 	}

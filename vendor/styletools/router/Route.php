@@ -6,7 +6,7 @@
  * Author : Argan Piquet
  */
  
-namespace Styletools\Libs;
+namespace Styletools\Libs\Router;
 
 class Route {
 	private $path;

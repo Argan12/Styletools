@@ -10,12 +10,12 @@ namespace Styletools;
 
 require_once('vendor/autoload.php');
 
-use \Styletools\Libs\Router;
+use \Styletools\Libs\Router\Router;
 use \Styletools\Controllers\DefaultController;
 
 $router = new Router($_GET['url']);
 
 $router->get('/', "Default#indexAction");
-$router->get('/twig', "Default#testTwig");
+$router->get('/register', "Registration#registerViewAction");
 
 $router->run();
