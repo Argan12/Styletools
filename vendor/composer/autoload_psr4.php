@@ -14,6 +14,7 @@ return array(
     'Styletools\\Libs\\Router\\' => array($vendorDir . '/styletools/router'),
     'Styletools\\Libs\\Controller\\' => array($vendorDir . '/styletools/controller'),
     'Styletools\\Libs\\Console\\' => array($vendorDir . '/styletools/console'),
+    'Styletools\\Libs\\Components\\' => array($vendorDir . '/styletools/components'),
     'Styletools\\Libs\\' => array($vendorDir . '/styletools/libs'),
     'Styletools\\Forms\\' => array($baseDir . '/src/forms'),
     'Styletools\\Controllers\\' => array($baseDir . '/src/app/controllers'),

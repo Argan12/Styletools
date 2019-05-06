@@ -21,6 +21,7 @@
 			"Styletools\\Libs\\Controller\\": "vendor/styletools/controller/",
 			"Styletools\\Libs\\Router\\": "vendor/styletools/router/",
 			"Styletools\\Libs\\Console\\": "vendor/styletools/console/",
+			"Styletools\\Libs\\Components\\": "vendor/styletools/components/",
 			"Styletools\\": ""
 		}
 	}

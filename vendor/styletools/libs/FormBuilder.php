@@ -56,7 +56,7 @@ class FormBuilder {
 		}
 		
 		if ($attr) {
-			$formTag .= $this->attr($attr) . '  />';
+			$formTag .= $this->attr($attr) . ' required>';
 		} else {
 			$formTag .= '  />';
 		}
@@ -76,7 +76,7 @@ class FormBuilder {
 		{
 			$formTag .= $this->attr($attr) . '>';
 		} else {
-			$formTag .= '>';
+			$formTag .= 'required>';
 		}
 		
 		if (!empty($value))

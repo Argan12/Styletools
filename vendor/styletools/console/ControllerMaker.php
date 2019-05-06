@@ -15,7 +15,7 @@ class ControllerMaker {
 	public function getControllerName() {
 		return $this->controllerName;
 	}
-	
+
 	public function setControllerName($controllerName) {
 		return $this->controllerName = $controllerName;
 	}

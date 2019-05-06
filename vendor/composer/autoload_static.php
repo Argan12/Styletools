@@ -25,6 +25,7 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
             'Styletools\\Libs\\Router\\' => 23,
             'Styletools\\Libs\\Controller\\' => 27,
             'Styletools\\Libs\\Console\\' => 24,
+            'Styletools\\Libs\\Components\\' => 27,
             'Styletools\\Libs\\' => 16,
             'Styletools\\Forms\\' => 17,
             'Styletools\\Controllers\\' => 23,
@@ -64,6 +65,10 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
         'Styletools\\Libs\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/styletools/console',
+        ),
+        'Styletools\\Libs\\Components\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/styletools/components',
         ),
         'Styletools\\Libs\\' => 
         array (

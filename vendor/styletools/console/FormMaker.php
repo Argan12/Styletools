@@ -36,7 +36,7 @@ use Styletools\Libs\FormBuilder;
 
 class ".trim($getForm)."Form {
 	/**
-	 * This method is form example
+	 * This method is a form example
 	 */
 	public static function addForm() {
 		\$formBuilder = new FormBuilder();

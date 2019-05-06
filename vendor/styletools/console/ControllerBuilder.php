@@ -12,6 +12,7 @@ require_once('vendor/autoload.php');
 use Styletools\Libs\Console\ControllerMaker;
 
 class ControllerBuilder {
+
 	public function writeController() {
 		$controllerMaker = new ControllerMaker();
 		

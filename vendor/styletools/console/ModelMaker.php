@@ -30,12 +30,21 @@ class ModelMaker {
  
 namespace Styletools\Models;
 
-require_once('src/app/models/DatabaseFactory.php');
+require_once('vendor/autoload.php');
 
-use \Styletools\Models\CrudManager;
+use \Styletools\Models\DatabaseFactory;
+use \Styletools\Libs\CrudBuilder;
 
 class ".trim($getModel)."Manager extends DatabaseFactory {
+	public function getDatabaseConnection() {
+		\$getInstance = DatabaseFactory::getInstance();
+		
+		return \$getInstance->getConnexion();
+	}
+	
 	public function example() {
+		\$database = \$this->getDatabaseConnection();
+		
 		/* Your code here */
 	}
 }

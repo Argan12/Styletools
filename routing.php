@@ -16,6 +16,6 @@ use \Styletools\Controllers\DefaultController;
 $router = new Router($_GET['url']);
 
 $router->get('/', "Default#indexAction");
-$router->get('/register', "Registration#registerViewAction");
 
 $router->run();
+

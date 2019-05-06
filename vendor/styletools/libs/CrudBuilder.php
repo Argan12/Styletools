@@ -8,7 +8,9 @@
 
 namespace Styletools\Libs;
 
-require_once('src/app/models/DatabaseFactory.php');
+require_once('vendor/autoload.php');
+
+use Styletools\Models\DatabaseFactory;
 
 class CrudBuilder extends DatabaseFactory {
 	public function createElement($tableName, array $fields, $value) {
