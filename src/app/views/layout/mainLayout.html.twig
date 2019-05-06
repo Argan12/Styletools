@@ -67,7 +67,7 @@
 	<script src="dist/js/styletools.min.js"></script>
 	
 	{% for js in javascripts %}
-		{{ js }}
+		{{ js|raw }}
 	{% endfor %}
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
