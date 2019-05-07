@@ -19,4 +19,5 @@ return array(
     'Styletools\\Forms\\' => array($baseDir . '/src/forms'),
     'Styletools\\Controllers\\' => array($baseDir . '/src/app/controllers'),
     'Styletools\\' => array($baseDir . '/'),
+    'Plasticbrain\\FlashMessages\\' => array($vendorDir . '/plasticbrain/php-flash-messages/src'),
 );

@@ -1,137 +1,139 @@
 <?php
 
-/*!
- * Styletools 1.4
- * Copyright 2019 Argan Piquet
- * Author : Argan Piquet
- */
-
 namespace Styletools\Libs;
 
 require_once('vendor/autoload.php');
 
-use Styletools\Models\DatabaseFactory;
+use Styletools\Libs\DatabaseConfig;
 
-class CrudBuilder extends DatabaseFactory {
-	public function createElement($tableName, array $fields, $value) {
-		$fieldsName = '';
-		$aliasName = '';
-		$bindValueQuery = '';
+class CrudBuilder extends DatabaseConfig {
+	public $sqlQuery;
+	public $bindValueQuery;
+	
+	public function databaseConnexion() {
+		$instance = DatabaseConfig::getInstance();
 		
-		foreach ($fields as $key)
-		{
-			if ($key === end($fields))
-			{
-				$fieldsName .= $key;
-			} else {
-				$fieldsName .= $key.', ';
-			}
-		}
-		
-		foreach ($fields as $alias)
-		{
-			if ($alias === end($fields))
-			{
-				$aliasName .= ':'.$alias;
-			} else {
-				$aliasName .= ':'.$alias.', ';
-			}
-		}
-		
-		$database = DatabaseFactory::getConnexion();
-		$SQLQuery = "INSERT INTO $tableName($fieldsName) VALUES($aliasName)";	
-		$createElement = $database->prepare($SQLQuery);
-		
-		foreach ($value as list($bvAlias, $var, $type))
-		{
-			if ($type == 'int')
-			{
-				$bindValueQuery .= $createElement->bindValue($bvAlias, htmlspecialchars($var), \PDO::PARAM_INT);
-			} else if ($type == 'str') {
-				$bindValueQuery .= $createElement->bindValue($bvAlias, htmlspecialchars($var), \PDO::PARAM_STR);
-			}
-		}
-		
-		$createElement->execute();
-		
-		return $createElement;
-	}
-
-	public function getElement($tableName, array $values, $options) {
-		$get = '';
-		$opt = '';
-		
-		foreach ($values as $select)
-		{
-			if ($select === end($values))
-			{
-				$get .= $select;
-			} else {
-				$get .= $select.', ';
-			}
-		}
-		
-		foreach ($options as list($a))
-		{
-			$opt .= $a;
-		}
-		
-		$database = DatabaseFactory::getConnexion();
-		$getElement = $database->query("SELECT $get FROM $tableName $opt");
-		
-		return $getElement;
+		return $instance->getConnexion();
 	}
 	
-	public function updateElement($tableName, array $update, array $rowToModify, $values) {
-		$newVal = '';
-		$bindValueQuery = '';
+	public function insert($tableName, $values) {
+		$getDatabase = $this->databaseConnexion();
 		
-		foreach ($update as $edit)
+		$this->sqlQuery = 'INSERT INTO '.$tableName.' (';
+		$this->bindValueQuery = '';
+		
+		foreach ($values as $rows => $alias)
 		{
-			if ($edit === end($update))
+			if ($alias === end($values))
 			{
-				$newVal .= $edit.' = :'.$edit;
+				$this->sqlQuery .= $rows;
 			} else {
-				$newVal .= $edit.' = :'.$edit.', ';
+				$this->sqlQuery .= $rows.', ';
 			}
 		}
 		
-		foreach ($rowToModify as $id => $key)
-		{
-			$getID = $id.' = '.$key;
-		}
+		$this->sqlQuery .= ') VALUES (';
 		
-		$database = DatabaseFactory::getConnexion();
-		$SQLQuery = "UPDATE $tableName SET $newVal WHERE $getID";
-		$updateElement = $database->prepare($SQLQuery);
-		
-		foreach ($values as list($alias, $var, $type))
+		foreach ($values as $rows => $alias)
 		{
-			if ($type == 'int')
+			if ($alias === end($values))
 			{
-				$bindValueQuery .= $updateElement->bindValue($alias, $var, \PDO::PARAM_INT);	
-			} else if ($type == 'str') {
-				$bindValueQuery .= $updateElement->bindValue($alias, $var, \PDO::PARAM_STR);
+				$this->sqlQuery .= ':'.$rows;
+			} else {
+				$this->sqlQuery .= ':'.$rows.', ';
 			}
 		}
 		
-		$updateElement->execute();
+		$this->sqlQuery .= ')';
 		
-		return $updateElement;
+		$insert = $getDatabase->prepare($this->sqlQuery);             
+		
+		foreach ($values as $rows => $alias)
+		{
+			$this->bindValueQuery .= $insert->bindValue(':'.$rows, $alias, \PDO::PARAM_STR);
+		}
+		
+		$insert->execute();
+		
+		return $insert;
 	}
 	
-	public function deleteElement($tableName, array $rowToDelete) {
-		foreach ($rowToDelete as $id => $key)
+	public function selectAll($tableName) {
+		$getDatabase = $this->databaseConnexion();
+		
+		$this->sqlQuery = 'SELECT * FROM '.$tableName;
+		$selectAll = $getDatabase->query($this->sqlQuery);
+		
+		return $selectAll;
+	}
+	
+	public function selectWhere($tableName, $row, $operator, $value, $valueType) {
+		$getDatabase = $this->databaseConnexion();
+		
+		$this->sqlQuery = 'SELECT * FROM '.$tableName.' WHERE '.$row.' '.$operator.' ';
+		
+		if ($valueType == 'int')
 		{
-			$getID = $id.' = '.$key;
+			$this->sqlQuery .= $value;
+		} else if ($valueType == 'char') {
+			$this->sqlQuery .= '\''.$value.'\'';
 		}
 		
-		$database = DatabaseFactory::getConnexion();
+		$selectWhere = $getDatabase->prepare($this->sqlQuery);
 		
-		$SQLQuery = "DELETE FROM $tableName WHERE $getID";
-		$deleteElement = $database->prepare($SQLQuery);
-		$deleteElement->execute();
+		return $selectWhere;
+	}
+	
+	public function update($tableName, $values, $where, $whereValue) {
+		$getDatabase = $this->databaseConnexion();
 		
-		return $deleteElement;
+		$this->sqlQuery = 'UPDATE '.$tableName.' SET ';
+		$this->bindValueQuery = '';
+		
+		foreach ($values as $rows => $alias)
+		{
+			if ($alias === end($values))
+			{
+				$this->sqlQuery .= $rows.' = :'.$rows;
+			} else {
+				$this->sqlQuery .= $rows.' = :'.$rows.', ';
+			}
+		}
+		
+		$this->sqlQuery .= ' WHERE '.$where.' = '.$whereValue;
+		
+		$update = $getDatabase->prepare($this->sqlQuery);
+		
+		foreach ($values as $rows => $alias)
+		{
+			$this->bindValueQuery .= $update->bindValue(':'.$rows, $alias);
+		}
+		
+		$update->execute();
+		
+		return $update;
+	}
+	
+	public function delete($tableName, $row, $operator, $value, $valueType) {
+		$getDatabase = $this->databaseConnexion();
+		
+		$this->sqlQuery = 'DELETE FROM '.$tableName.' WHERE '.$row.' '.$operator.' :'.$row;
+		 
+		$delete = $getDatabase->prepare($this->sqlQuery);
+		
+		if ($valueType == 'int')
+		{
+			$delete->bindValue(":$row", $value, \PDO::PARAM_INT);
+		} else {
+			$delete->bindValue(":$row", $value, \PDO::PARAM_STR);
+		}
+		
+		$delete->execute();
+		
+		return $delete;
+	}
+	
+	public function databaseDisconnect() {
+		return $this->databaseConnexion = null;
 	}
 }

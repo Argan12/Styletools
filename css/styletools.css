@@ -1,5 +1,5 @@
 /*!
- * Styletools 1.4
+ * Styletools 1.5
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */
@@ -200,6 +200,49 @@ hr.dashed_thin {
 .column {
 	display:flex;
 	flex-direction:column;
+}
+
+/*** Items position ***/
+.items_align_center {
+	justify-content:center;
+	align-items:center;
+}
+
+.row_left {
+	justify-content:flex-start;
+}
+
+.row_center {
+	justify-content:center;
+}
+
+.row_right {
+	justify-content:flex-end;
+}
+
+.space-between {
+	justify-content:space-between;
+}
+
+.space_around {
+	justify-content:space_around;
+}
+
+.column_left {
+	align-items:flex-start;
+}
+
+.column_center {
+	align-items:center;
+}
+
+.column_right {
+	align-items:flex-end;
+}
+
+/*** Margin ***/
+.margin_auto {
+	margin:auto;
 }
 
 /*** Navbar ***/

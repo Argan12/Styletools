@@ -5,16 +5,11 @@
  * Author : Argan Piquet
  */
 
-namespace Styletools\Models;
+namespace Styletools\Libs;
 
-class DatabaseFactory
-{
+class DatabaseConfig {
     private static $instance;
     private $connexion;  
-    private $host = 'localhost';
-    private $user = 'root';
-    private $pass = '';
-    private $name = 'styletools';
 
     /**
      * Get the class instance
@@ -24,7 +19,7 @@ class DatabaseFactory
     public static function getInstance() {
         if (self::$instance === null) 
 		{
-            self::$instance = new DatabaseFactory();
+            self::$instance = new DatabaseConfig();
         }
 		
         return self::$instance;
@@ -35,7 +30,10 @@ class DatabaseFactory
      * Will be called only once by the getInstance method.
      */
     public function __construct() {
-		$this->connexion = new \PDO("mysql:host={$this->host};dbname={$this->name};charset=utf8", $this->user, $this->pass);
+		$xml = 'src/config/databaseConfig.xml';
+		$config = simplexml_load_file($xml);
+		
+		$this->connexion = new \PDO("mysql:host={$config->hostname};dbname={$config->dbname};charset=utf8", $config->username, $config->password);
     }
 
     /**

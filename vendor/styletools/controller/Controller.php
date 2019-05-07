@@ -15,8 +15,29 @@ class Controller {
 		exit;
 	}
 	
+	public function redirectToRoute() {
+		
+	}
+	
 	public function pageNotFound() {
 		
+	}
+	
+	public function sessionStart() {
+		return session_start();
+	}
+	
+	public function sessionDestroy() {
+		session_start();
+		$_SESSION = array();
+		
+		if (ini_get('session.use_cookies'))
+		{
+			$params = session_get_cookie_params();
+			setcookie(session_name(), '', time() - 42000, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+		}
+		
+		session_destroy();
 	}
 		
 	public function setCookie($name, $value = '', $expire = 0, $path = null, $domain = null, $secure = false, $httpOnly = true) {

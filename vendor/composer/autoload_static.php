@@ -31,6 +31,10 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
             'Styletools\\Controllers\\' => 23,
             'Styletools\\' => 11,
         ),
+        'P' => 
+        array (
+            'Plasticbrain\\FlashMessages\\' => 27,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -85,6 +89,10 @@ class ComposerStaticInit4109e40f3ad74ce1a91f975cec11f20a
         'Styletools\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
+        ),
+        'Plasticbrain\\FlashMessages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/plasticbrain/php-flash-messages/src',
         ),
     );
 

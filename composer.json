@@ -1,5 +1,5 @@
 {
-    "name": "argan/styletools",
+    "name": "styletools/getfullstyletools",
     "description": "personnal framework",
     "type": "project",
     "authors": [
@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "twig/twig": "^2.0"
+        "twig/twig": "^2.0",
+        "plasticbrain/php-flash-messages": "^1.0"
     },
 	"autoload": {
 		"psr-4": {

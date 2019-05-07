@@ -1,5 +1,5 @@
 /*!
- * Styletools 1.4
+ * Styletools 1.5
  * Copyright 2019 Argan Piquet
  * Author : Argan Piquet
  */
