@@ -10,8 +10,15 @@
     ],
     "require": {
         "twig/twig": "^2.0",
+		"php": "7.1.9",
         "plasticbrain/php-flash-messages": "^1.0"
     },
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/Argan12/Styletools"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"Styletools\\Models\\": "src/app/models/",
