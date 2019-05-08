@@ -1,5 +1,10 @@
 # Styletools
 
+## Download Styletools
+
+* Download Styletools ZIP from Github
+* With Composer : enter the following command on your terminal : composer create-project gwereve/getstyletools
+
 ## What is Styletools ?
 
 Styletools is a little framework developed by myself for my personal needs.
