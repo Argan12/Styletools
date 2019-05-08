@@ -1,6 +1,6 @@
 {
     "name": "gwereve/getstyletools",
-    "description": "personnal framework",
+    "description": "MVC PHP and CSS Framework",
     "type": "project",
     "authors": [
         {
@@ -13,12 +13,6 @@
 		"php": "7.1.9",
         "plasticbrain/php-flash-messages": "^1.0"
     },
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/Argan12/Styletools"
-		}
-	],
 	"autoload": {
 		"psr-4": {
 			"Styletools\\Models\\": "src/app/models/",
