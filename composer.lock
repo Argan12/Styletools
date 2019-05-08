@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77d5b222fc018b0c86166d0abf8aa290",
+    "content-hash": "79537ec6acb5a786f0a074242b7de39e",
     "packages": [
         {
             "name": "plasticbrain/php-flash-messages",
