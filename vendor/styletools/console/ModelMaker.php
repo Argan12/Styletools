@@ -32,19 +32,10 @@ namespace Styletools\Models;
 
 require_once('vendor/autoload.php');
 
-use \Styletools\Models\DatabaseFactory;
 use \Styletools\Libs\CrudBuilder;
 
-class ".trim($getModel)."Manager extends DatabaseFactory {
-	public function getDatabaseConnection() {
-		\$getInstance = DatabaseFactory::getInstance();
-		
-		return \$getInstance->getConnexion();
-	}
-	
+class ".trim($getModel)."Manager {
 	public function example() {
-		\$database = \$this->getDatabaseConnection();
-		
 		/* Your code here */
 	}
 }
