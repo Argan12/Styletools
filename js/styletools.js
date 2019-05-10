@@ -5,7 +5,7 @@
  */
 
 /*** Display dropdown menu ***/
-	$('#icon').click(function() {
+	$('.navicon').click(function() {
 		$('.dropdown_menu').slideToggle("slow");
 		});
 	
