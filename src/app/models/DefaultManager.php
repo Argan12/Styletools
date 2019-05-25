@@ -9,7 +9,7 @@ namespace Styletools\Models;
 
 require_once('vendor/autoload.php');
 
-use \Styletools\Libs\CrudBuilder;
+use Styletools\Libs\CrudBuilder;
 
 class DefaultManager {
 	public function example() {
